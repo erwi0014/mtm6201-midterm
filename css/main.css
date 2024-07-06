@@ -1,0 +1,26 @@
+/* Set up colours */
+:root{
+    --colour-1:#d69e3d;
+    --colour-2:#966f2c;
+    --bg-colour:#f3f0e9;
+}
+
+/* Set up fonts */
+
+/* Mobile: */
+h1{
+    font-size: 2.027rem;
+    font-family: "Lato", sans-serif;
+} 
+h2{
+    font-size: 1.802rem;
+    font-family: "Lato", sans-serif;
+}
+h3{
+    font-size: 1.424rem;
+    font-family: "Lato", sans-serif;
+}
+p{
+    font-size: 1rem;
+    font-family: "Karla", sans-serif;
+}
