@@ -15,7 +15,7 @@
     <header>
         <nav>
             <div class="wrapper">
-                <div class="logoContainer">
+                <div id="logoContainer">
                     <ul class="unstyledList">
                         <li>
                             <a href="#home">
@@ -24,13 +24,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="navContainer">
-                    <ul class="unstyledList">
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#Locations">Locations</a></li>
-                    </ul>
-                </div>
+                <ul id="navContainer" class="unstyledList">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#Locations">Locations</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -44,9 +42,130 @@
         </div>
         <div id="welcome">
             <div class="wrapper">
-                
+                <section id="experience">
+                    <p class="subHeading">Welcome to my coffee house</p>
+                    <h2>Experience a new way to taste coffee</h2>
+                    <div class="imageHolder">
+                        <img>
+                        <img>
+                        <img>
+                        <img>
+                        <img>
+                    </div>
+                </section>
+                <section id="visit">
+                    <p>What we offer</p>
+                    <h2>Why visit us?</h2>
+                    <div id="visitArticleHolder">
+                        <article>
+                            <img>
+                            <h3>
+                                Fair trade coffee
+                            </h3>
+                            <p>
+                                We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.
+                            </p>
+                        </article>
+                        <article>
+                            <img>
+                            <h3>
+                                Local baked goods
+                            </h3>
+                            <p>
+                                We use local products to bake our goods and bring in a variety of treats from local bakers with our community.
+                            </p>
+                        </article>
+                        <article>
+                            <img>
+                            <h3>
+                                Made with love
+                            </h3>
+                            <p>
+                                We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="menuLocationTeaser">
+            <div class="wrapper">
+                <section class="menuTeaser">
+                    <p class="subHeading">
+                        Our Menu
+                    </p>
+                    <h2>
+                        Explore what we have to offer you
+                    </h2>
+                    <a id="menuButton" class="buttonFilled" href="#menu">Explore our menu</a>
+                </section>
+                <section class="locationTeaser">
+                    <p class="subHeading">
+                        locations
+                    </p>
+                    <h2>
+                        find your nearest coffee shop
+                    </h2>
+                    <a id="locationButton" class="buttonGhost" href="#location">View locations</a>
+                </section>
+            </div>
+        </div> 
+        <div id="about">
+            <div class="wrapper">
+                <img>
+                <article>
+                    <p class="subHeading">About us</p>
+                    <h2>Read our story</h2>
+                    <p>
+                        In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.
+                    </p>
+                    <br>
+                    <p>
+                        My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.
+                    </p>
+                    <a id="aboutButton" href="#">Learn More</a>
+                </article>
+            </div>
+        </div>
+        <div id="testimonialSection">
+            <div class="wrapper">
+                <p class="subHeading">testimonials</p>
+                <h2>What our customers say about us</h2>
+                <div id="testimonialContainer">
+                    <article id="testimonial">
+                        <blockquote id="testimonialQuote">
+                            "I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."
+                        </blockquote>
+                        <p id="namePlate">
+                            Jane D., Toronto
+                        </p>
+                    </article>
+                    <article id="testimonial">
+                        <blockquote id="testimonialQuote">
+                            "Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."
+                        </blockquote>
+                        <p id="namePlate">
+                            Scott S., Ottawa
+                        </p>
+                    </article>
+                    <article id="testimonial">
+                        <blockquote id="testimonialQuote">
+                            "Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."
+                        </blockquote>
+                        <p id="namePlate">
+                            Susie F., Ottawa 
+                        </p>
+                    </article>
+                </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="wrapper">
+            <p id="copywrite">
+                © My Coffee Company 2024
+            </p>
+        </div>
+    </footer>
 </body>
 </html>

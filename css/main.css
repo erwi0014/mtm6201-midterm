@@ -5,6 +5,11 @@
     --bg-colour:#f3f0e9;
 }
 
+/* Border-box */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 /* Set up fonts */
 
 /* Mobile: */
@@ -24,3 +29,44 @@ p{
     font-size: 1rem;
     font-family: "Karla", sans-serif;
 }
+
+/* Mobile Styling */
+
+/* Begings styling nav */
+
+header{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.unstyledList, .unstyledList li, .unstyledList a{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav #navContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+
+header #logoContainer ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+
+header a{
+    color: white;
+}
+
+/* begins hero styling */
