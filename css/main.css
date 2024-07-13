@@ -3,7 +3,8 @@
     --colour-1:#d69e3d;
     --colour-2:#966f2c;
     --bg-colour:#f3f0e9;
-    --linear-gradient: rgba(0, 0, 0, 0.6)
+    --light-linear-gradient: rgba(0, 0, 0, 0.3);
+    --linear-gradient: rgba(0, 0, 0, 0.6);
 }
 
 body{
@@ -22,20 +23,34 @@ h1{
     font-size: 2.027rem;
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
+    font-weight: 900;
+    line-height: 3rem;
 } 
 h2{
     font-size: 1.802rem;
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
+    font-weight: 800;
+    line-height: 2.7rem;
 }
 h3{
     font-size: 1.424rem;
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
+    font-weight: 800;
+    line-height: 2.1rem;
 }
 p{
     font-size: 1rem;
     font-family: "Karla", sans-serif;
+    line-height: 1.5rem;
+}
+
+
+/* links */
+a{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
 }
 
 /* Class styling */
@@ -57,6 +72,13 @@ a.buttonFilled{
     display: inline-block;
     font-family: "Karla", sans-serif;
     font-weight: 900;
+    
+    transition: color 0.3s, background-color 0.3s;
+}
+
+a.buttonFilled:hover, a.buttonFilled:focus{
+    background-color: var(--colour-2);
+    color: white;
 }
 
 a.buttonGhost{
@@ -72,16 +94,23 @@ a.buttonGhost{
     font-family: "Karla", sans-serif;
     font-weight: 900;
 }
+a.buttonGhost:hover, a.buttonGhost:focus{
+    background-color: white;
+    color: black;
+}
 
 .subHeading{
     color: var(--colour-1);
     text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.5rem;
 }
 
 /* Mobile Styling */
 
 .wrapper{
-    max-width: 400px;
+    min-width: 390px;
+    max-width: 450px;
     margin: 0 auto;
 }
 
@@ -89,8 +118,13 @@ a.buttonGhost{
 
 header{
     background-color: black;
-    padding: 0;
-    margin: 0;
+}
+
+nav .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 nav #navContainer{
@@ -99,6 +133,7 @@ nav #navContainer{
     align-items: center;
     justify-content: space-evenly;
     text-transform: uppercase;
+    padding: 1rem;
 }
 
 header #logoContainer ul{
@@ -106,10 +141,18 @@ header #logoContainer ul{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    padding: 1rem;
+    padding-bottom: 0;
 }
-
-header a{
+/* nav links */
+nav a{
+    display: block;
     color: white;
+    padding: 1rem;
+    transition: color 0.3s;
+}
+nav a:hover, :focus{
+    color: var(--colour-1);
 }
 
 /* begins hero styling */
@@ -117,7 +160,7 @@ header a{
     text-align: center;
     background-color: black;
     color: white;
-    height: 400px;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,15 +170,16 @@ header a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-bottom: 2rem;
 }
 
 #home .wrapper{
-    width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    padding: 2rem 3rem;
 }
 
 #home h1{
@@ -143,12 +187,70 @@ header a{
 }
 
 /* begins styling welcome */
+
+#welcome{
+    color: 333333;
+}
+
 #welcome #visit{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+#welcome section #imageContainer{
+    margin: 1rem 0;
+    display: grid;
+    grid-template-areas: 
+    "img1 img1"
+    "img1 img1"
+    "img2 img3"
+    "img4 img5";
+    gap: 1rem;
+}
+
+#welcome section img{
+    width: 100%;
+}
+
+#welcome #imageContainer img:nth-child(1){
+    grid-area: img1;
+}
+#welcome #imageContainer img:nth-child(2){
+    grid-area: img2;
+}
+#welcome #imageContainer img:nth-child(3){
+    grid-area: img3;
+}
+#welcome #imageContainer img:nth-child(4){
+    grid-area: img4;
+}
+#welcome #imageContainer img:nth-child(5){
+    grid-area: img5;
+}
+
+#welcome #visit{
+    margin: 2rem 0;
+}
+
+#welcome #visitArticleHolder{
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome section#visit img{
+    width: 50%;
+}
+
+#welcome #visit article{
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+#welcome #visit article > *{
+    padding: 0.5rem 0;
 }
 
 /* begins styling menu and locations teaser*/
@@ -159,6 +261,8 @@ header a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    /* flex */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,4 +271,229 @@ header a{
     /* text */
     color: white;
     text-align: center;
+}
+
+#menuLocationTeaser .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* begins styling about */
+
+#about .wrapper{
+    margin: 2rem auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#about *{
+    margin: 0.5rem auto;
+}
+#about img{
+    width: 100%;
+}
+#about a#aboutButton{
+    color: white;
+    background-color: black;
+    border-color: black;
+    margin: 0 auto;
+    transition: color 0.3s, background-color 0.3s;
+}
+#aboutButton:hover, #aboutButton:focus{
+    background-color: var(--colour-2);
+}
+
+/* begins styling testimonials */
+#testimonialSection{
+    background-color: black;
+    color: white;
+    padding-top: 2rem;
+}
+
+#testimonialSection .wrapper{
+    padding: 2rem auto;
+    margin: auto;
+}
+#testimonialSection .wrapper *{
+    padding: 0.5rem auto;
+}
+
+#testimonialSection .wrapper > #testimonialContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#testimonialSection #testimonialContainer article{
+    min-height: 400px;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+#testimonialSection #testimonialContainer article *{
+    padding: 0.5rem;
+}
+
+#testimonialSection #testimonialContainer article:nth-child(1){
+    background: -webkit-linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("/images/testimonial-1.jpeg");
+    background: linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("/images/testimonial-1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#testimonialSection article:nth-child(2){
+    background: -webkit-linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("/images/testimonial-2.jpeg");
+    background: linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("/images/testimonial-2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#testimonialSection article:nth-child(3){
+    background: -webkit-linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("/images/testimonial-3.jpeg");
+    background: linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("/images/testimonial-3.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#testimonialSection #namePlate{
+    color: var(--colour-1);
+    text-transform: uppercase;
+}
+
+/* footer styles */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 2rem 0;
+}
+footer .wrapper{
+    border-top: solid white 1px;
+}
+footer .wrapper *{
+    padding: 1rem 0;
+}
+
+/* hover states */
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    /* fonts for tablet */
+    h1{
+        font-size: 2.986rem;
+        line-height: 4.479rem;
+    } 
+    h2{
+        font-size: 2.488rem;
+        line-height: 3.732rem;
+    }
+    h3{
+        font-size: 1.728rem;
+        line-height: 2.592rem;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    /* increased wrapper size */
+    .wrapper{
+        max-width: 768px;
+    }
+    
+    #home{
+        height: 60vh;
+    }
+
+    /* Welcome images layout */
+    #welcome section #imageContainer{
+        grid-template-areas: 
+        "img1 img1 img2 img3" 
+        "img1 img1 img4 img5";
+    }
+
+    #visit #visitArticleHolder{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #visit #visitArticleHolder article{
+        width: 45%;
+    }
+
+    #menuLocationTeaser .wrapper{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #menuLocationTeaser .wrapper > *{
+        width: 40%;
+    }
+
+    /* About us, make image display left of content */
+    #about .wrapper{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    #about .wrapper > *{
+        max-width: 50%;
+    }
+
+    /* Testimonials, make a row of 3 */
+    #testimonialSection .wrapper > #testimonialContainer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #testimonialSection #testimonialContainer article{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    /* fonts for tablet */
+    h1{
+        font-size: 3.815rem;
+        line-height: 5.7rem;
+    } 
+    h2{
+        font-size: 3.052rem;
+        line-height: 4.578rem;
+    }
+    h3{
+        font-size: 1.953rem;
+        line-height: 2.9rem;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    /* increased wrapper size */
+    .wrapper{
+        max-width: 1100px;
+    }
+
+    /* change nav layout */
+    nav .wrapper{
+        flex-direction: row;
+    }
+
+    #home{
+        height: 90vh;
+    }
+    #home .wrapper{
+        padding: 2rem 6rem;
+    }
+
+    /* change layout of welcome visit articles*/
+    #welcome #visitArticleHolder article{
+        width: 30%;
+    }
 }
