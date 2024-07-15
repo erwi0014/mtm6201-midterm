@@ -189,7 +189,7 @@ nav a:hover, :focus{
 /* begins styling welcome */
 
 #welcome{
-    color: 333333;
+    color: #333333;
 }
 
 #welcome #visit{
@@ -315,11 +315,11 @@ nav a:hover, :focus{
 }
 
 #testimonialSection .wrapper{
-    padding: 2rem auto;
+    padding: 2rem 0;
     margin: auto;
 }
 #testimonialSection .wrapper *{
-    padding: 0.5rem auto;
+    padding: 0.5rem 0;
 }
 
 #testimonialSection .wrapper > #testimonialContainer{
