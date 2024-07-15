@@ -106,6 +106,28 @@ a.buttonGhost:hover, a.buttonGhost:focus{
     line-height: 1.5rem;
 }
 
+
+/* skip links*/
+.skip a{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip a{
+    color: var(--colour-1);
+}
+.skip a:focus{
+    position: absolute;
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+}
+
+
 /* Mobile Styling */
 
 .wrapper{
@@ -406,7 +428,7 @@ footer .wrapper *{
     }
     /* increased wrapper size */
     .wrapper{
-        max-width: 768px;
+        min-width: 700px;
     }
     
     #home{
