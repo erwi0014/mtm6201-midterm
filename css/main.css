@@ -187,8 +187,8 @@ nav a:hover, :focus{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: -webkit-linear-gradient(var(--linear-gradient), var(--linear-gradient)), url("/images/hero-background.jpg");
-    background: linear-gradient(var(--linear-gradient), var(--linear-gradient)), url("/images/hero-background.jpg");
+    background: -webkit-linear-gradient(var(--linear-gradient), var(--linear-gradient)), url("../images/hero-background.jpg");
+    background: linear-gradient(var(--linear-gradient), var(--linear-gradient)), url("../images/hero-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -278,8 +278,8 @@ nav a:hover, :focus{
 /* begins styling menu and locations teaser*/
 #menuLocationTeaser{
     height: 500px;
-    background: -webkit-linear-gradient(var(--linear-gradient), var(--linear-gradient)), url("/images/coffee-shop.jpeg");
-    background: linear-gradient(var(--linear-gradient), var(--linear-gradient)), url("/images/coffee-shop.jpeg");
+    background: -webkit-linear-gradient(var(--linear-gradient), var(--linear-gradient)), url("../images/coffee-shop.jpeg");
+    background: linear-gradient(var(--linear-gradient), var(--linear-gradient)), url("../images/coffee-shop.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -364,22 +364,22 @@ nav a:hover, :focus{
 }
 
 #testimonialSection #testimonialContainer article:nth-child(1){
-    background: -webkit-linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("/images/testimonial-1.jpeg");
-    background: linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("/images/testimonial-1.jpeg");
+    background: -webkit-linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("../images/testimonial-1.jpeg");
+    background: linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("../images/testimonial-1.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #testimonialSection article:nth-child(2){
-    background: -webkit-linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("/images/testimonial-2.jpeg");
-    background: linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("/images/testimonial-2.jpeg");
+    background: -webkit-linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("../images/testimonial-2.jpeg");
+    background: linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("../images/testimonial-2.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 #testimonialSection article:nth-child(3){
-    background: -webkit-linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("/images/testimonial-3.jpeg");
-    background: linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("/images/testimonial-3.jpeg");
+    background: -webkit-linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("../images/testimonial-3.jpeg");
+    background: linear-gradient(var(--light-linear-gradient), var(--light-linear-gradient)), url("../images/testimonial-3.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
